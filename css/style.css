@@ -1,0 +1,51 @@
+#captcha{
+	font-size:25px; 
+	letter-spacing: 2px;
+	line-height: 50px;
+	text-align:center;
+	color:black;
+	width:200px;
+	height:50px; 
+	background: rgb(253,57,29);
+  background: linear-gradient(90deg, rgba(253,57,29,1) 15%, rgba(166,195,71,1) 45%, rgba(26,63,166,1) 100%);
+	
+	/*font-family: 'Pixelify Sans', cursive;*/
+}
+#captcha::first-letter{
+	font-size: 140%;
+}
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Добавьте зеленый цвет текста и галочку, когда требования верны */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Добавьте красный цвет текста и букву "x", когда требования неверны */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
